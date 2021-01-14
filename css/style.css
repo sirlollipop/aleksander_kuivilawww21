@@ -3,6 +3,10 @@ body {
 	font-family: Arial;
 }
 
+p::first-letter {
+	font-size:18px;
+}
+
 .navbar {
 	background-color: #88bbeb;
 	overflow: hidden;
