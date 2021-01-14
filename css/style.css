@@ -4,7 +4,9 @@ body {
 }
 
 p::first-letter {
-	font-size:18px;
+	font-family: Times New Roman;
+	font-size:20px;
+	font-weight:bolder;
 }
 
 .navbar {
@@ -47,7 +49,7 @@ p::first-letter {
 	vertical-align: middle;
 }
 
-#story {
+.story {
 	margin: 10px;
 	padding: 2px;
 	border-style: solid;
@@ -55,15 +57,30 @@ p::first-letter {
 	border-color: black;
 }
 
-#story:hover {
+.story:hover {
 	background-color: powderblue;
 	transition: 0.5s;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+tr{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: powderblue;
+}
 
 
 .dropdown {
 	overflow: auto;
+	display:inline-block;
 }
 
 .tasklist {
@@ -88,10 +105,72 @@ p::first-letter {
 
 
 .dropdown:hover .tasklist {
-	display: block;
+	display: inline-block;
 }
 
 #titlebar {
 	margin: 5px;
+}
+
+.cssTask {
+	color:#ffffff;
+	padding: 3px;
+	width:750px;
+	word-break: break-word;
+	background-size: contain;
+	background-image:url("../imgs/vrChatWorld.png");
+	background-repeat:repeat-y;
+	outline: solid 3px black;
+	transition: outline 0.6s linear, box-shadow 0.6s linear;
+	margin: 0.5em;
+	box-shadow:6px 10px rgba(0,0,0,0.1);
+}
+
+.cssTask:hover {
+	outline-width: 10px;
+	box-shadow:15px 20px rgba(0,0,0,0.1);
+}
+
+.cssTask h1 {
+	text-decoration:underline;
+}
+
+.task1 .tooltiptext, .task2 .tooltiptext, .task3 .tooltiptext, .indeximg .tooltiptext  {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.task1:hover .tooltiptext, .task2:hover .tooltiptext, .task3:hover .tooltiptext, .indeximg:hover .tooltiptext   {
+  visibility: visible;
+}
+
+.indeximg {
+	margin-top: 10px;
+}
+
+.lorem {
+	border-style: dashed;
+	border-width: 2px;
+	border-color: #ffffff;
+}
+
+
+#videodiv {
+	float:right;
+}
+
+#h1video {
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: blue;
+	display: block;
+	width: 10%;
 }
 
