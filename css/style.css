@@ -163,7 +163,9 @@ tr:nth-child(even) {
 
 
 #videodiv {
+	width:700px;
 	float:right;
+	text-align:left;
 }
 
 #h1video {
@@ -171,6 +173,6 @@ tr:nth-child(even) {
 	border-bottom-width: 2px;
 	border-bottom-color: blue;
 	display: block;
-	width: 10%;
+	width: 50%;
 }
 
