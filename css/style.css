@@ -115,7 +115,7 @@ tr:nth-child(even) {
 .cssTask {
 	color:#ffffff;
 	padding: 3px;
-	width:750px;
+	width:50%;
 	word-break: break-word;
 	background-size: contain;
 	background-image:url("../imgs/vrChatWorld.png");
@@ -163,9 +163,9 @@ tr:nth-child(even) {
 
 
 #videodiv {
-	width:700px;
 	float:right;
 	text-align:left;
+	width: 50%;
 }
 
 #h1video {
@@ -176,3 +176,7 @@ tr:nth-child(even) {
 	width: 50%;
 }
 
+.flexcontainer {
+	display: flex;
+	justify-content: space-between;
+}
