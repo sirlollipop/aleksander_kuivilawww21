@@ -34,12 +34,12 @@ p::first-letter {
 	background-color: #5a72d1;
 	color: white;
 }
-#newsimg {
+.newsimg {
 	border-radius: 25px;
 	
 }
 
-#newsimg:hover {
+.newsimg:hover {
 	border-radius: 0px;
 	transition: 1s;
 }
@@ -273,7 +273,7 @@ p::first-letter {
 		padding: 0px;
 	}
 	
-	#newsimg {
+	.newsimg {
 		height:100px;
 	}
 	
