@@ -234,6 +234,30 @@ p::first-letter {
 	float: right;
 }
 
+.regform {
+	display:flex;
+	justify-content:center;
+}
+
+.regform ul {
+	list-style-type:none;
+}
+
+.regform input[type=submit] {
+	display:table;
+	margin: 0 auto;
+	background-color: #88bbeb;
+	color: white;
+	border-radius: 5px;
+	padding: 6px 64px;
+	
+}
+
+.regform input[type=submit]:hover {
+	background-color: #5a72d1;
+	cursor: pointer;
+}
+
 @media (max-width: 550px) {
 	
 	body {
