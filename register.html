@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<link rel="icon" href="imgs/zarkwotcutout.png" type="image/x-icon">
+		<title>Register</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+	
+	<body>
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<div class="dropdown">
+				<a class="projects">Projects</a>
+				<div class="tasklist">
+					<a href="task1.html">Task1</a>
+					<a href="task2.html">Task2</a>
+					<a href="task3.html">Task3</a>
+				</div>
+			</div>
+			<a class="active" href="register.html" id="navreg">Register</a>
+		</div>
+		
+		<div class="regform">
+			<form action="index.html" method="post">
+				<ul>
+					<li>
+						<label for="uname">Username:</label>
+						<input type="text" id="uname" required>
+					</li>
+					<li>
+						<label for="uname">Password:</label>
+						<input type="password" id="pword" required>
+					</li>
+					<li>
+						<label for="email">Email:</label>
+						<input type="email" id="email" placeholder="email@email.com" required>
+					</li>
+					<li>
+						<label for="fname">First name:</label>
+						<input type="text" id="fname" name="fname" required>
+					</li>
+					<li>
+						<label for="lname">Last name:</label>
+						<input type="text" id="lname" name="lname" required>
+					</li>
+					<li>
+						<input type="submit" value="Register">
+					</li>
+				</ul>
+			</form>
+		</div>
+	</body>
+</html>

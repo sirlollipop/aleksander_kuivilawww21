@@ -62,18 +62,18 @@ p::first-letter {
 	transition: 0.5s;
 }
 
-table {
+.newsTable {
   font-family: arial, sans-serif;
   border-collapse: collapse;
 }
 
-tr{
+.newsTable tr{
   border: 1px solid black;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
+.newsTable tr:nth-child(even) {
   background-color: powderblue;
 }
 
@@ -109,7 +109,10 @@ tr:nth-child(even) {
 }
 
 #titlebar {
-	margin: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+	text-align: center;
 }
 
 .cssTask {
@@ -136,15 +139,15 @@ tr:nth-child(even) {
 }
 
 .task1 .tooltiptext, .task2 .tooltiptext, .task3 .tooltiptext, .indeximg .tooltiptext  {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
+	visibility: hidden;
+	width: 120px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: relative;
+	z-index: 1;
 }
 
 .task1:hover .tooltiptext, .task2:hover .tooltiptext, .task3:hover .tooltiptext, .indeximg:hover .tooltiptext   {
@@ -180,3 +183,81 @@ tr:nth-child(even) {
 	display: flex;
 	justify-content: space-between;
 }
+
+.newsFlex {
+	display: flex;
+	justify-content: center;
+	flex-grow: 3;
+	flex-wrap: wrap;
+	
+}
+
+.adbar {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 15px;
+	border-color: black;
+	height: 600px;
+	width: 160px;
+	position: fixed;
+	right: 0px;
+}
+
+.leftbar {
+	position: fixed;
+	left: 10px;
+}
+
+.middlebar {
+	display:flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+
+.footer {
+	position:absolute;
+	width:99%;
+	background-color: #88bbeb;
+	text-align: center;
+}
+
+.footer p {
+	font-size: 10px;
+}
+
+.footer p::first-letter {
+	font-family: Times New Roman;
+	font-size:15px;
+	font-weight:bolder;
+}
+
+#navreg {
+	float: right;
+}
+
+@media (max-width: 550px) {
+	
+	body {
+		font-size:10px;
+	}
+	
+	.adbar {
+		visibility:hidden;
+	}
+	
+	.story {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#newsimg {
+		height:100px;
+	}
+	
+	.sitetitle {
+		visibility: hidden;
+	}
+}
+
