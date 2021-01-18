@@ -211,7 +211,6 @@ p::first-letter {
 	width: 50%;
 	flex-direction: column;
 	justify-content: center;
-	align-items: left;
 }
 
 .footer {
