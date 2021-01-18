@@ -190,7 +190,7 @@ p::first-letter {
 	
 }
 
-.adbar {
+.adbannerright {
 	visibility:visible;
 	border-style: solid;
 	border-width: 2px;
@@ -265,7 +265,7 @@ p::first-letter {
 		font-size:10px;
 	}
 	
-	.adbar {
+	.adbannerright {
 		visibility:hidden;
 	}
 	
