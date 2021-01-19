@@ -5,11 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<link rel="icon" href="imgs/zarkwotcutout.png" type="image/x-icon">
-		<title>Task2</title>
+		<title>Task 4-5</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 		
 	</head>
-	
 	<body>
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
@@ -21,43 +20,76 @@
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
-						
 						<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="task1.html">Task1</a></li>
-								<li><a class="dropdown-item active" href="task2.html">Task2</a></li>
+								<li><a class="dropdown-item" href="task2.html">Task2</a></li>
 								<li><a class="dropdown-item" href="task3.html">Task3</a></li>
 								<li><a class="dropdown-item" href="bootstrap.html">Bootstrap test</a></li>
-								<li><a class="dropdown-item" href="task5.html">Task4-5</a></li>
+								<li><a class="dropdown-item active" href="task5.html">Task4-5</a></li>
 							</ul>
 						</li>
 					</ul>
 					<a class="nav-link" href="register.html" id="navreg">Register</a>
 				</div>
-				
 			</div>
 		</nav>
 		
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Projects</a></li>
-		</ul>
-		<article>
-		<h1>This is an article</h1>
-		<img src="imgs/zarkwot.png" height="200" style="float: right;" alt="Image cant be shown" />
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-		Integer leo eros, imperdiet eu viverra porttitor, consectetur eu elit.</p>
-		<p>Mauris quis viverra nulla, et tincidunt mi.<br>
-		Suspendisse sodales, turpis sit amet volutpat convallis, lorem nulla semper nibh, eget semper dolor ligula eget mauris.</p>
-		<address>
-			Hämeen ammattikorkeakoulu<br>
-			HAMK<br>
-			PL 230<br>
-			13101 Hämeenlinna
-		</address>
-		</article>
+		<div class="container-fluid">
+			<header class="headerbox">
+				<h1>Task 4-5 - Bootstrap and all that other jazz</h1>
+			</header>
+			<div class="row">
+				<div class="col-sm-2">
+					<img src="imgs/zarkwot.png" class="img-fluid" alt="Image cant be shown" />
+				</div>
+				<div class="col-sm-7" style="background-color: antiquewhite; margin-right:2px;">
+					<h2> Contact Us </h2>
+					<form id="contactusform">
+						<div class="mb-3">
+							<label for="inputEmail" class="form-label">Email address:</label>
+							<input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+						</div>
+						
+						<div class="input-group mb-3">
+							<div class="input-group-text">
+								<span>First Name:</span>
+							</div>
+							<input type="text" class="form-control" id="inputFname" placeholder="First Name">
+							<div class="input-group-text">
+								<span>Last Name:</span>
+							</div>
+							<input type="text" class="form-control" id="inputLname" placeholder="Last Name">
+						</div>
+						
+						<div class="input-group">
+							<div class="input-group-text">
+								<span>Text:</span>
+							</div>
+							<textarea class="form-control" aria-label="With textarea" required></textarea>
+						</div>
+						
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="contactReq">
+							<label class="form-check-label" for="contactReq">
+							Do you wish for us to contact you?
+							</label>
+						</div>
+						
+						<div class="col-12">
+							<button class="btn btn-primary" type="submit">Submit form</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-2" style="border-style: solid; border-width: 3px; border-color: #88bbeb;">
+					<p>
+					Your ad here.
+					</p>
+				</div>
+			</div>
+		</div>
+		
 		
 		<footer class="bg-light text-center text-lg-start footer">
 			<div class="text-center p-3 footer">

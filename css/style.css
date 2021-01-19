@@ -11,12 +11,12 @@ p::first-letter {
 
 .navbar {
 	background-color: #88bbeb;
-	overflow: hidden;
+	color: white;
 }
 
 .navbar a{
 	float: left;
-	color: #f2f2f2;
+	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	font-size: 17px;
@@ -34,6 +34,8 @@ p::first-letter {
 	background-color: #5a72d1;
 	color: white;
 }
+
+
 .newsimg {
 	border-radius: 25px;
 	
@@ -77,35 +79,16 @@ p::first-letter {
   background-color: powderblue;
 }
 
-
-.dropdown {
-	overflow: auto;
-	display:inline-block;
-}
-
-.tasklist {
-	display: none;
-	position: absolute;
+.dropdown-menu {
 	background-color: #88bbeb;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+	margin-top: 0px;
+
 }
 
-
-
-.tasklist a {
-	float: none;
-	padding: 12px 16px;
-	text-decoration: none;
+.dropdown:hover .dropdown-menu {
 	display: block;
-	text-align: left;
 }
 
-
-
-.dropdown:hover .tasklist {
-	display: inline-block;
-}
 
 #titlebar {
 	margin-top: 5px;
@@ -215,10 +198,7 @@ p::first-letter {
 }
 
 .footer {
-	position:absolute;
-	width:99%;
 	background-color: #88bbeb;
-	text-align: center;
 }
 
 .footer p {
@@ -257,6 +237,28 @@ p::first-letter {
 .regform input[type=submit]:hover {
 	background-color: #5a72d1;
 	cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgb(255,255,255);
+}
+
+.collapse #navreg, .collapsing #navreg {
+	float:left;
+}	
+
+.headerbox {
+	text-align:center;
+	width:100%;
+	background-color: pink;
+}
+
+.row h2 {
+	text-align:center;
 }
 
 @media (max-width: 550px) {
